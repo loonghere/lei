@@ -3,6 +3,8 @@
  * 日志类
  * @author：王雷 loonghere@qq.com
  */
+namespace app\common;
+
 class Log
 {
     public static function write($event)

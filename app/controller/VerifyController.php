@@ -3,6 +3,9 @@
  * 验证码控制器
  * @author：王雷 loonghere@qq.com
  */
+namespace app\controller;
+use app\common\Verify;
+
 class VerifyController
 {
 	public function index()

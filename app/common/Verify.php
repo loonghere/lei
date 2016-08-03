@@ -3,6 +3,8 @@
  * 取自ThinkPHP 3.2.2的验证码类，用法也相同
  * @author：王雷 loonghere@qq.com
  */
+namespace app\common;
+
 class Verify
 {
     protected $config =	[

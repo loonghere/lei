@@ -3,6 +3,8 @@
  * 根控制器
  * @author：王雷 loonghere@qq.com
  */
+namespace app\controller;
+
 class Controller
 {
 	/**

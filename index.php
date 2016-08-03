@@ -28,18 +28,18 @@ class Lei
 	public function run() {
 		$input = $this->getInput();
 		$module = isset($input['module']) ? $input['module'] : 'Index';
-		$module = $module . 'Controller';
-		if (file_exists('app/controller/' . $module . '.php')) {
+		$module = 'app\controller\\' . $module . 'Controller';
+		if (file_exists($module . '.php')) {
 			$action = isset($input['action']) ? $input['action'] : 'index';
 			$controller = new $module;
 			if (!method_exists($controller, $action)) {
-				$controller = new PublicController;
+				$controller = new app\controller\PublicController;
 				$controller->takeover();
 			} else {
 				$controller->$action($input);
 			}
 		} else {
-			$controller = new PublicController;
+			$controller = new app\controller\PublicController;
 			$controller->takeover();
 		}
 	}

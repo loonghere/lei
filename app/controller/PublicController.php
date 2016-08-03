@@ -3,6 +3,8 @@
  * 公共控制器，404、跳转等方法
  * @author：王雷 loonghere@qq.com
  */
+namespace app\controller;
+
 class PublicController extends Controller
 {
 	/**

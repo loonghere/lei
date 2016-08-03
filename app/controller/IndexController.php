@@ -3,6 +3,9 @@
  * 首页控制器
  * @author：王雷 loonghere@qq.com
  */
+namespace app\controller;
+use app\common\Session;
+
 class IndexController extends Controller
 {
     public function index($input = [])

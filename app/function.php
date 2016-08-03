@@ -11,14 +11,10 @@
  */
 function loader($class) {
 	$find = 0;
-	$autoload = require __DIR__ . '/config/autoload.php';
-	foreach ($autoload as $key => $val) {
-		if (file_exists(__DIR__ . '/' . $val . '/' . $class . '.php')) {
-			require __DIR__ . '/' . $val . '/' . $class . '.php';
-			$find = 1;
-			break;
-		}
-	}
+    if (file_exists(__DIR__ . '/../' . $class . '.php')) {
+        require __DIR__ . '/../' . $class . '.php';
+        $find = 1;
+    }
 	if (!$find) die($class . '加载失败');
 }
 /**

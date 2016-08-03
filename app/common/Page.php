@@ -6,6 +6,8 @@
  * echo $page->showpage();
  * @author：王雷 loonghere@qq.com
  */
+namespace app\common;
+
 class Page
 {
     public $total;       // 总记录

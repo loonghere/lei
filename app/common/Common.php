@@ -3,6 +3,8 @@
  * 操作配置文件类
  * @author：王雷 loonghere@qq.com
  */
+namespace app\common;
+
 class Common
 {
 	public static function read_config_file($file)

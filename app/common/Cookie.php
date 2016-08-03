@@ -3,6 +3,8 @@
  * Cookie操作类
  * @author：王雷 loonghere@qq.com
  */
+namespace app\common;
+
 class Cookie
 {
     public static function has($key = '')

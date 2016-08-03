@@ -3,6 +3,8 @@
  * PHPExcel 1.8.0
  * @author：王雷 loonghere@qq.com
  */
+namespace app\common;
+
 require __DIR__ . '/../../vendor/phpexcel/PHPExcel.php';
 require __DIR__ . '/../../vendor/phpexcel/PHPExcel/Writer/Excel5.php';
 require __DIR__ . '/../../vendor/phpexcel/PHPExcel/Writer/CSV.php';

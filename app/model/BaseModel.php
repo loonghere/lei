@@ -3,6 +3,9 @@
  * 系统基础model
  * @author：王雷 loonghere@qq.com
  */
+namespace app\model;
+use app\common\Mysql;
+
 class BaseModel
 {
 	public $db;

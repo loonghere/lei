@@ -4,6 +4,8 @@
  * 采用单例模式，避免new model的时候重复实例化mysql操作类
  * @author：王雷 loonghere@qq.com
  */
+namespace app\common;
+
 class Mysql
 {
     public $link_id    = NULL;
