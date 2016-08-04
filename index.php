@@ -31,6 +31,12 @@ class Lei
         require '/app/route.php';
     }
 
+    public function takeover()
+    {
+        $controller = new app\controller\PublicController;
+        $controller->takeover();
+    }
+
 	public function run() {
 		$input = $this->getInput();
         $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
@@ -56,19 +62,16 @@ class Lei
                 	$action = isset($handler[1]) ? $handler[1] : 'index';
                 	$controller = new $module;
                 	if (!method_exists($controller, $action)) {
-                		$controller = new app\controller\PublicController;
-                		$controller->takeover();
+                		$this->takeover();
                 	} else {
                 		$controller->$action($vars);
                 	}
                 } else {
-                	$controller = new app\controller\PublicController;
-                	$controller->takeover();
+                	$this->takeover();
                 }
                 break;
             default:
-                $controller = new app\controller\PublicController;
-                $controller->takeover();
+                $this->takeover();
                 break;
         }
 	}

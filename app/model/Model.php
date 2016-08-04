@@ -6,7 +6,7 @@
 namespace app\model;
 use app\common\Mysql;
 
-class BaseModel
+class Model
 {
 	public $db;
 	public $table = '';
