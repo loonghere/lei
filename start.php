@@ -5,7 +5,6 @@
  * 一个简洁的PHP小框架
  * @author 王雷 loonghere@qq.com
  */
-require __DIR__ . '/app/function.php';
-spl_autoload_register('loader');
+require '/app/function.php';
 doAddslashes();
 initSession();

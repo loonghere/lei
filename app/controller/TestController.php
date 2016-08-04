@@ -7,8 +7,8 @@ namespace app\controller;
 
 class TestController
 {
-    public function index()
+    public function index($input = [])
     {
-        echo 'test done';
+        var_dump($input);
     }
 }
